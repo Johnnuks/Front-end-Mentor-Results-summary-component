@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.main {
+    height: 425px;
+    width: 85vh;
+    display: flex;
+    box-shadow: 5px 5px 10px 1px lightblue;
+    border-radius: 0px 28px 28px 0px;
+}
+
+.yourResults {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: hsl(224, 30%, 27%);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7%;
+}
+
+.rate {
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    height: 70%;
+    width: 175px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rate h2 {
+    color: white;
+    font-size: 45px;
+    margin-top: 30px;
+}
+
+.rate p {
+    margin-top: -40px;
+}
+
+.resultNumbers {
+    height: 65%;
+    font-weight: 800;
+    color: hsl(241, 100%, 89%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resultNumbers p {
+    font-size: 12px;
+}
+
+.resultsDescription {
+    color: hsl(241, 100%, 89%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.resultsDescription h2 {
+    color: hsl(0, 0%, 100%);
+}
+
+
+/* RIGHT SIDE BELOW*/
+
+
+.sumary {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sumaryText {
+    display: flex;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.grayText {
+    color: rgba(0, 0, 0, 0.637);
+    margin-left: 100px;
+}
+
+.sumReaction {
+    background-color: #dfb0cc21;
+    color: hsl(0, 100%, 67%);
+    line-height: 20px;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.sumReaction:hover {
+    color: hsl(0, 94%, 50%);
+}
+
+.sumMemory {
+    background-color: #fdfdd8;
+    color: hsl(39, 100%, 56%);
+    line-height: 20px;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.sumMemory:hover {
+    color: hsla(39, 100%, 50%, 0.438);
+}
+
+.sumVerbal {
+    background-color: #e7fcf9;
+    color: hsl(166, 100%, 37%);
+    line-height: 20px;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.sumVerbal:hover {
+    color: hsl(166, 81%, 51%);
+}
+
+.sumVisual {
+    background-color: #ebebff;
+    color: hsl(234, 85%, 45%);
+    line-height: 20px;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.sumVisual:hover {
+    color: hsl(229, 71%, 74%);
+}
+
+.sumary svg {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sumContinue {
+    width: 80%;
+    line-height: 20px;
+    padding: 10px;
+    background-color: #303B5A;
+    margin-bottom: 45px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(0, 0%, 100%);
+}
+
+.sumContinue::before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0;
+}
+
+.sumContinue:hover {
+	color: hsl(0, 0%, 100%);
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+	box-shadow: 0 5px 35px rgba(0, 0, 0, 0.6);
+	transform: translateY(-1px);
+}
+
+/*Responsive effect*/
+
+
+@media (max-width: 375px) {
+    body {
+        height: auto;
+    }
+    
+    .main {
+        flex-direction: column;
+        height: auto;
+        padding-top: 0;
+    }
+
+    .yourResults {
+        width: 100%;
+        padding-top: 0;
+        border-radius: 0px 0px 28px 28px ;
+        height: 350px;
+    }
+
+    .sumary {
+        width: 100%;
+        height: 400px;
+        margin-right: 0;
+        margin-top: 5px;
+    }
+}
+
+
+/* Json thing now?? script.js*/
