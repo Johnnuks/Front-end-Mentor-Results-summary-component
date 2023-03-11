@@ -18,7 +18,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: (https://github.com/Johnnuks/Front-End-Mentor-studies/tree/main/results-summary)
+- Solution URL: (https://github.com/Johnnuks/Front-end-Mentor-Results-summary-component)
 
 ## My process
 
